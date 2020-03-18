@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>如果看到这行字说明我失败了</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <input id='title1' class='form-control'>
+    <script>
+        var input = document.getElementById('title1')
+        document.title = input.value = '随便说句话'
+        setInterval(() => {
+            document.title = input.value
+        }, 500);
+    </script>
+</body>
+
+</html>
